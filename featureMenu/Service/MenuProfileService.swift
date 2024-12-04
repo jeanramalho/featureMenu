@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 protocol MenuProfileServiceDelegate: GenericService {
     func getMenuFromJson(completion: @escaping completion<MenuProfileGroup?>)
