@@ -8,22 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEBD3E632D00CFDC00C8C976 /* Pods_featureMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9254E66BAA25EF89175DB2AB /* Pods_featureMenu.framework */; };
-		CEBD3E642D00CFDC00C8C976 /* Pods_featureMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9254E66BAA25EF89175DB2AB /* Pods_featureMenu.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CEBD3E2A2D00CEC500C8C976 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CEBD3E642D00CFDC00C8C976 /* Pods_featureMenu.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4BF446149EDBC67DB8C8105B /* Pods-featureMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-featureMenu.release.xcconfig"; path = "Target Support Files/Pods-featureMenu/Pods-featureMenu.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +96,6 @@
 				CE4F57442CFA0B15000259A1 /* Sources */,
 				CE4F57452CFA0B15000259A1 /* Frameworks */,
 				CE4F57462CFA0B15000259A1 /* Resources */,
-				CEBD3E2A2D00CEC500C8C976 /* Embed Frameworks */,
 				1CAAB2F65CF99B7531CDECE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (

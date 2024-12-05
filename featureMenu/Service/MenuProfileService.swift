@@ -15,6 +15,26 @@ protocol MenuProfileServiceDelegate: GenericService {
 
 
 class MenuProfileService: MenuProfileServiceDelegate {
+    
+    func getMenu(completion: @escaping completion<MenuProfileGroup?>){
+        let url: String = "https://run.mocky.io/v3/17ecb996-f8dd-412c-a337-f80b6d037ea2"
+        
+        AF.request(url, method: .get).validate().responseDecodable(of: MenuProfileGroup.self) { response in
+            print(#function)
+            debugPrint(response)
+            
+            switch response.result {
+            case .success(let success):
+                print("SUCCESS: \(#function)")
+                completion(success, nil)
+            case .failure(let error):
+                print("ERROR: \(#function)")
+                completion(nil, Error.errorRequest(error))
+            }
+        }
+    }
+    
+    
     func getMenuFromJson(completion: @escaping completion<MenuProfileGroup?>) {
         if let url = Bundle.main.url(forResource: "menuProfile", withExtension: "json"){
             do {
