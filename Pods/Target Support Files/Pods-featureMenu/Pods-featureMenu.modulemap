@@ -1,6 +1,0 @@
-framework module Pods_featureMenu {
-  umbrella header "Pods-featureMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEBD3E632D00CFDC00C8C976 /* Pods_featureMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9254E66BAA25EF89175DB2AB /* Pods_featureMenu.framework */; };
+		CE0A85082D01F31D00C9B4B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE0A85072D01F31D00C9B4B2 /* Alamofire */; };
+		CE0A850A2D01F31D00C9B4B2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE0A85092D01F31D00C9B4B2 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BF446149EDBC67DB8C8105B /* Pods-featureMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-featureMenu.release.xcconfig"; path = "Target Support Files/Pods-featureMenu/Pods-featureMenu.release.xcconfig"; sourceTree = "<group>"; };
-		9254E66BAA25EF89175DB2AB /* Pods_featureMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_featureMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F57482CFA0B15000259A1 /* featureMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = featureMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D23C9C0089BF52143F103085 /* Pods-featureMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-featureMenu.debug.xcconfig"; path = "Target Support Files/Pods-featureMenu/Pods-featureMenu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -43,37 +41,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBD3E632D00CFDC00C8C976 /* Pods_featureMenu.framework in Frameworks */,
+				CE0A85082D01F31D00C9B4B2 /* Alamofire in Frameworks */,
+				CE0A850A2D01F31D00C9B4B2 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E88889AF5D2CAF41349B38F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D23C9C0089BF52143F103085 /* Pods-featureMenu.debug.xcconfig */,
-				4BF446149EDBC67DB8C8105B /* Pods-featureMenu.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		8DBB0D061AF1873B07AF1CA7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9254E66BAA25EF89175DB2AB /* Pods_featureMenu.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CE4F573F2CFA0B15000259A1 = {
 			isa = PBXGroup;
 			children = (
 				CE4F574A2CFA0B15000259A1 /* featureMenu */,
 				CE4F57492CFA0B15000259A1 /* Products */,
-				7E88889AF5D2CAF41349B38F /* Pods */,
-				8DBB0D061AF1873B07AF1CA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +76,6 @@
 				CE4F57442CFA0B15000259A1 /* Sources */,
 				CE4F57452CFA0B15000259A1 /* Frameworks */,
 				CE4F57462CFA0B15000259A1 /* Resources */,
-				1CAAB2F65CF99B7531CDECE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +113,9 @@
 			);
 			mainGroup = CE4F573F2CFA0B15000259A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE4F57492CFA0B15000259A1 /* Products */;
 			projectDirPath = "";
@@ -155,23 +137,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CAAB2F65CF99B7531CDECE0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-featureMenu/Pods-featureMenu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-featureMenu/Pods-featureMenu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-featureMenu/Pods-featureMenu-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CB7786E07DE087D97954A460 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,7 +174,6 @@
 /* Begin XCBuildConfiguration section */
 		CE4F575C2CFA0B18000259A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D23C9C0089BF52143F103085 /* Pods-featureMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -236,7 +200,6 @@
 		};
 		CE4F575D2CFA0B18000259A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF446149EDBC67DB8C8105B /* Pods-featureMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,6 +365,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE0A85072D01F31D00C9B4B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE0A85092D01F31D00C9B4B2 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE4F57402CFA0B15000259A1 /* Project object */;
 }
