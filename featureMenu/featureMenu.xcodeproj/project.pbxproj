@@ -6,32 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CE0A85082D01F31D00C9B4B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE0A85072D01F31D00C9B4B2 /* Alamofire */; };
-		CE0A850A2D01F31D00C9B4B2 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE0A85092D01F31D00C9B4B2 /* AlamofireDynamic */; };
-		CE17017C2D01F7B9007E7ED7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE17017B2D01F7B9007E7ED7 /* Alamofire */; };
-		CE17017E2D01F7B9007E7ED7 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE17017D2D01F7B9007E7ED7 /* AlamofireDynamic */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		CE4F57482CFA0B15000259A1 /* featureMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = featureMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0BF2752D033E8D0083F3CE /* featureMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = featureMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CE4F575A2CFA0B18000259A1 /* Exceptions for "featureMenu" folder in "featureMenu" target */ = {
+		CE0BF2872D033E900083F3CE /* Exceptions for "featureMenu" folder in "featureMenu" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = CE4F57472CFA0B15000259A1 /* featureMenu */;
+			target = CE0BF2742D033E8D0083F3CE /* featureMenu */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CE4F574A2CFA0B15000259A1 /* featureMenu */ = {
+		CE0BF2772D033E8D0083F3CE /* featureMenu */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				CE4F575A2CFA0B18000259A1 /* Exceptions for "featureMenu" folder in "featureMenu" target */,
+				CE0BF2872D033E900083F3CE /* Exceptions for "featureMenu" folder in "featureMenu" target */,
 			);
 			path = featureMenu;
 			sourceTree = "<group>";
@@ -39,32 +32,28 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE4F57452CFA0B15000259A1 /* Frameworks */ = {
+		CE0BF2722D033E8D0083F3CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE17017C2D01F7B9007E7ED7 /* Alamofire in Frameworks */,
-				CE17017E2D01F7B9007E7ED7 /* AlamofireDynamic in Frameworks */,
-				CE0A85082D01F31D00C9B4B2 /* Alamofire in Frameworks */,
-				CE0A850A2D01F31D00C9B4B2 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE4F573F2CFA0B15000259A1 = {
+		CE0BF26C2D033E8D0083F3CE = {
 			isa = PBXGroup;
 			children = (
-				CE4F574A2CFA0B15000259A1 /* featureMenu */,
-				CE4F57492CFA0B15000259A1 /* Products */,
+				CE0BF2772D033E8D0083F3CE /* featureMenu */,
+				CE0BF2762D033E8D0083F3CE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CE4F57492CFA0B15000259A1 /* Products */ = {
+		CE0BF2762D033E8D0083F3CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE4F57482CFA0B15000259A1 /* featureMenu.app */,
+				CE0BF2752D033E8D0083F3CE /* featureMenu.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,66 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE4F57472CFA0B15000259A1 /* featureMenu */ = {
+		CE0BF2742D033E8D0083F3CE /* featureMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4F575B2CFA0B18000259A1 /* Build configuration list for PBXNativeTarget "featureMenu" */;
+			buildConfigurationList = CE0BF2882D033E900083F3CE /* Build configuration list for PBXNativeTarget "featureMenu" */;
 			buildPhases = (
-				CB7786E07DE087D97954A460 /* [CP] Check Pods Manifest.lock */,
-				CE4F57442CFA0B15000259A1 /* Sources */,
-				CE4F57452CFA0B15000259A1 /* Frameworks */,
-				CE4F57462CFA0B15000259A1 /* Resources */,
+				CE0BF2712D033E8D0083F3CE /* Sources */,
+				CE0BF2722D033E8D0083F3CE /* Frameworks */,
+				CE0BF2732D033E8D0083F3CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CE4F574A2CFA0B15000259A1 /* featureMenu */,
+				CE0BF2772D033E8D0083F3CE /* featureMenu */,
 			);
 			name = featureMenu;
+			packageProductDependencies = (
+			);
 			productName = featureMenu;
-			productReference = CE4F57482CFA0B15000259A1 /* featureMenu.app */;
+			productReference = CE0BF2752D033E8D0083F3CE /* featureMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CE4F57402CFA0B15000259A1 /* Project object */ = {
+		CE0BF26D2D033E8D0083F3CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					CE4F57472CFA0B15000259A1 = {
+					CE0BF2742D033E8D0083F3CE = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = CE4F57432CFA0B15000259A1 /* Build configuration list for PBXProject "featureMenu" */;
+			buildConfigurationList = CE0BF2702D033E8D0083F3CE /* Build configuration list for PBXProject "featureMenu" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CE4F573F2CFA0B15000259A1;
+			mainGroup = CE0BF26C2D033E8D0083F3CE;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = CE4F57492CFA0B15000259A1 /* Products */;
+			productRefGroup = CE0BF2762D033E8D0083F3CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE4F57472CFA0B15000259A1 /* featureMenu */,
+				CE0BF2742D033E8D0083F3CE /* featureMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE4F57462CFA0B15000259A1 /* Resources */ = {
+		CE0BF2732D033E8D0083F3CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -140,33 +127,8 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		CB7786E07DE087D97954A460 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-featureMenu-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		CE4F57442CFA0B15000259A1 /* Sources */ = {
+		CE0BF2712D033E8D0083F3CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,22 +138,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CE4F575C2CFA0B18000259A1 /* Debug */ = {
+		CE0BF2892D033E900083F3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = featureMenu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeanramalho.dev.featureMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -201,22 +165,24 @@
 			};
 			name = Debug;
 		};
-		CE4F575D2CFA0B18000259A1 /* Release */ = {
+		CE0BF28A2D033E900083F3CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = featureMenu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeanramalho.dev.featureMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -226,7 +192,7 @@
 			};
 			name = Release;
 		};
-		CE4F575E2CFA0B18000259A1 /* Debug */ = {
+		CE0BF28B2D033E900083F3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		CE4F575F2CFA0B18000259A1 /* Release */ = {
+		CE0BF28C2D033E900083F3CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,59 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE4F57432CFA0B15000259A1 /* Build configuration list for PBXProject "featureMenu" */ = {
+		CE0BF2702D033E8D0083F3CE /* Build configuration list for PBXProject "featureMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE4F575E2CFA0B18000259A1 /* Debug */,
-				CE4F575F2CFA0B18000259A1 /* Release */,
+				CE0BF28B2D033E900083F3CE /* Debug */,
+				CE0BF28C2D033E900083F3CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4F575B2CFA0B18000259A1 /* Build configuration list for PBXNativeTarget "featureMenu" */ = {
+		CE0BF2882D033E900083F3CE /* Build configuration list for PBXNativeTarget "featureMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE4F575C2CFA0B18000259A1 /* Debug */,
-				CE4F575D2CFA0B18000259A1 /* Release */,
+				CE0BF2892D033E900083F3CE /* Debug */,
+				CE0BF28A2D033E900083F3CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE0A85072D01F31D00C9B4B2 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		CE0A85092D01F31D00C9B4B2 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
-		CE17017B2D01F7B9007E7ED7 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		CE17017D2D01F7B9007E7ED7 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE0A85062D01F31D00C9B4B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = CE4F57402CFA0B15000259A1 /* Project object */;
+	rootObject = CE0BF26D2D033E8D0083F3CE /* Project object */;
 }
