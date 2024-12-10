@@ -2,9 +2,8 @@
 //  MenuProfile.swift
 //  featureMenu
 //
-//  Created by Jean Ramalho on 06/12/24.
+//  Created by Jean Ramalho on 10/12/24.
 //
-
 import Foundation
 
 // MARK: - MenuProfileGroup

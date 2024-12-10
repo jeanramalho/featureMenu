@@ -2,11 +2,11 @@
 //  GenericService.swift
 //  featureMenu
 //
-//  Created by Jean Ramalho on 06/12/24.
+//  Created by Jean Ramalho on 10/12/24.
 //
 
 import Foundation
-import Alamofire
+
 
 protocol GenericService: AnyObject {
     typealias completion <T> = (_ result: T, _ failure: Error?) -> Void
@@ -15,5 +15,4 @@ protocol GenericService: AnyObject {
 enum Error: Swift.Error {
     case fileNotFound(name: String)
     case fileDecodingFailed(name: String, Swift.Error)
-    case errorRequest(AFError)
 }

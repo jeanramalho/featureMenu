@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  featureMenu
 //
-//  Created by Jean Ramalho on 06/12/24.
+//  Created by Jean Ramalho on 10/12/24.
 //
 
 import UIKit
@@ -16,7 +16,5 @@ class MenuProfileVC: UIViewController {
         self.view.backgroundColor = .red
         viewModel.fetch(.mock)
     }
-
-
 }
 
