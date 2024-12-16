@@ -14,7 +14,20 @@ class MenuProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .red
+        viewModel.delegate(delegate: self)
         viewModel.fetch(.mock)
     }
+}
+
+extension MenuProfileVC: MenuProfileViewModelDelegate {
+    func success() {
+        print("Deu Certo")
+    }
+    
+    func error(_ message: String) {
+        print("Deu Ruim \(message)")
+    }
+    
+    
 }
 

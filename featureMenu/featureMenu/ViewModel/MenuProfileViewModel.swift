@@ -29,7 +29,11 @@ class MenuProfileViewModel {
         switch typeFetch {
         case .mock:
             self.service.getMenuFromJson { success, error in
-                print(success)
+                if let success = success {
+                    self.delegate?.success()
+                } else {
+                    self.delegate?.error(error?.localizedDescription ?? "")
+                }
             }
         case .request:
             break
