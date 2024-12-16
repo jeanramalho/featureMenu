@@ -11,9 +11,19 @@ enum typeFetch {
     case request
 }
 
+protocol MenuProfileViewModelDelegate: AnyObject {
+    func success()
+    func error(_ message: String)
+}
+
 class MenuProfileViewModel {
     
     private let service: MenuProfileService = MenuProfileService()
+    private weak var delegate: MenuProfileViewModelDelegate?
+    
+    public func delegate(delegate: MenuProfileViewModelDelegate?) {
+        self.delegate = delegate
+    }
     
     public func fetch(_ typeFetch: typeFetch){
         switch typeFetch {
