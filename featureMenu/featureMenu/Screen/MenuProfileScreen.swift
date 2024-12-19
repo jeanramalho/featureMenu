@@ -12,15 +12,24 @@ class MenuProfileScreen: UIView {
     lazy var headerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
+        view.backgroundColor = .purple
         return view
+    }()
+    
+    lazy var upArrowButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(systemName: "chevron.up"), for: .normal)
+        button.tintColor = .white
+        return button
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .purple
-        self.addSubview(self.headerView)
-        self.setConstraints()
+        backgroundColor = .purple
+        self.addSubview(headerView)
+        headerView.addSubview(upArrowButton)
+        setConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -29,10 +38,13 @@ class MenuProfileScreen: UIView {
     
     private func setConstraints(){
         NSLayoutConstraint.activate([
-            self.headerView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.headerView.heightAnchor.constraint(equalToConstant: 40)
+            headerView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            headerView.heightAnchor.constraint(equalToConstant: 40),
+            
+            upArrowButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+            upArrowButton.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
         ])
     }
     
