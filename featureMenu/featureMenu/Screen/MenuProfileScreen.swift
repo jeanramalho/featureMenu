@@ -21,8 +21,13 @@ class MenuProfileScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "chevron.up"), for: .normal)
         button.tintColor = .white
+        button.addTarget(self, action: #selector(tappedBack(_:)), for: .touchUpInside)
         return button
     }()
+    
+    @objc func tappedBack(_ sender: UIButton){
+        print(#function)
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
