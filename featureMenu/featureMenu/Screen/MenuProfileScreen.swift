@@ -60,6 +60,11 @@ class MenuProfileScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public func setupDelegateTableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
+        tableView.delegate = delegate
+        tableView.dataSource = dataSource
+    }
+    
     private func setConstraints(){
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
