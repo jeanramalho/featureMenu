@@ -50,6 +50,10 @@ class SectionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public func setupSection(description: String) {
+        self.descriptionLabel.text = description
+    }
+    
     private func confiConstraints(){
         NSLayoutConstraint.activate([
             referenceButton.topAnchor.constraint(equalTo: self.topAnchor),
