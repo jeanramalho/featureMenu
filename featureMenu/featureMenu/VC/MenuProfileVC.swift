@@ -45,7 +45,7 @@ extension MenuProfileVC: UITableViewDelegate, UITableViewDataSource {
         view.referenceButton.addTarget(self, action: #selector(tapSection(_:)), for: .touchUpInside)
         view.referenceButton.tag = section
         view.setupSection(description: "Teste")
-        return nil
+        return view
     }
     
     @objc func tapSection(_ sender: UIButton) {
