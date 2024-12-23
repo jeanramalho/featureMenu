@@ -20,6 +20,7 @@ class MenuProfileViewModel {
     
     private let service: MenuProfileService = MenuProfileService()
     private weak var delegate: MenuProfileViewModelDelegate?
+    private var data: [MenuProfile] = []
     
     public func delegate(delegate: MenuProfileViewModelDelegate?) {
         self.delegate = delegate
@@ -30,6 +31,7 @@ class MenuProfileViewModel {
         case .mock:
             self.service.getMenuFromJson { success, error in
                 if let success = success {
+                    self.data = success.group ?? []
                     self.delegate?.success()
                 } else {
                     self.delegate?.error(error?.localizedDescription ?? "")
@@ -38,6 +40,10 @@ class MenuProfileViewModel {
         case .request:
             break
         }
+    }
+    
+    public var numberOfSections: Int {
+        self.data.count
     }
 
 }
