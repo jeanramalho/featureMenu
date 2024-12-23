@@ -45,5 +45,9 @@ class MenuProfileViewModel {
     public var numberOfSections: Int {
         self.data.count
     }
+    
+    public func titleForSection(section: Int) -> String {
+        return self.data[section].title ?? ""
+    }
 
 }

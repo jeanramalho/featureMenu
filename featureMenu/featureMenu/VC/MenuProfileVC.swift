@@ -33,7 +33,7 @@ class MenuProfileVC: UIViewController {
 extension MenuProfileVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return viewModel.numberOfSections
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +44,7 @@ extension MenuProfileVC: UITableViewDelegate, UITableViewDataSource {
         let view = SectionView()
         view.referenceButton.addTarget(self, action: #selector(tapSection(_:)), for: .touchUpInside)
         view.referenceButton.tag = section
-        view.setupSection(description: "Teste")
+        view.setupSection(description: viewModel.titleForSection(section: section))
         return view
     }
     
